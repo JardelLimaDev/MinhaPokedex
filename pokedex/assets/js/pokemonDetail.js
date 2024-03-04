@@ -1,4 +1,4 @@
-const aPokemon = document.getElementById('aPokemon')
+const aPokemon = document.getElementById('MeuPokemon')
 
 const limit = 1;
 let offset = 0;
@@ -6,7 +6,7 @@ let offset = 0;
 function pokemonDetail(pokemon){
     return `
                      <img src="${pokemon.photo}">
-                     <div class"cardPokemon">
+                     <div>
                          <h2>${pokemon.name}</h2>
                          <h3>${pokemon.number}</h3>
                          <p>
@@ -41,6 +41,3 @@ function loadAPokemon(offset, limit){
 }
 
 loadAPokemon(offset, limit)
-
-
-
